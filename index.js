@@ -3,14 +3,16 @@
  */
 
 import {AppRegistry} from 'react-native';
+import React from 'react';
+
 import {Provider as PaperProvider} from 'react-native-paper';
-import App from './App';
+import Routes from './src/routes.js';
 import {name as appName} from './app.json';
 
 export default function Main() {
   return (
     <PaperProvider>
-      <App />
+      <Routes />
     </PaperProvider>
   );
 }
